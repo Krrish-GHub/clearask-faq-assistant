@@ -28,6 +28,16 @@ The initial 30-query benchmark (24 answerable, 6 expected abstentions) produced 
 
 On this small authored set, character n-grams ranked the expected FAQ first more often and made fewer unsupported matches, but the benchmark is too small and synthetic to claim real-world superiority. These numbers are a baseline for improving the dataset and evaluation, not a product-quality claim. Exact output is saved in `results/baseline.json`.
 
+## Abstention-threshold sweep
+
+The evaluator can now compare multiple cutoffs in one run. Each query is ranked once per analyzer, then the same scores are evaluated at every supplied threshold; this makes the coverage-versus-abstention tradeoff easier to inspect without repeatedly rebuilding the model.
+
+```bash
+uv run clearask-evaluate --sweep 0 0.1 0.15 0.22 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0 --output results/threshold_sweep.json
+```
+
+On the same 30-query synthetic set, the character model at `0.22` answered 73.3% of queries, with 70.8% top-1 accuracy on answerable queries and 13.6% unsupported answers among those answered; it correctly abstained on half of the ambiguous/out-of-scope examples. At `0.30`, coverage fell to 46.7%, unsupported-answer rate fell to 7.1%, and abstention recall rose to 83.3%, while top-1 accuracy on answerable questions fell to 50.0%. This illustrates the cost of stricter rejection on this dataset; neither cutoff is a generally validated setting. The sweep is saved in `results/threshold_sweep.json`.
+
 ## Run it
 
 ```bash
@@ -60,4 +70,4 @@ This is a teaching-scale benchmark written to make an undergrad-level retrieval 
 
 ## Status
 
-The first TF-IDF baselines, a synthetic test set, and four unit tests are in place. The next useful experiment is a confidence-threshold sweep on ambiguous and out-of-scope queries; this small initial benchmark is not a finished or validated real-world system.
+The word and character TF-IDF baselines, a synthetic test set, abstention-threshold sweep, and seven unit tests are in place. The next useful experiment is to expand the synthetic evaluation set and review failure cases before drawing stronger conclusions; the current benchmark is not a finished or validated real-world system.
