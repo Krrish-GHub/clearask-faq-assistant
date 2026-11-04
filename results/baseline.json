@@ -1,0 +1,30 @@
+{
+  "dataset": "synthetic campus-service FAQ benchmark",
+  "note": "Scores are a small synthetic benchmark, not evidence of real-world service performance.",
+  "results": [
+    {
+      "analyzer": "word",
+      "threshold": 0.22,
+      "queries": 30,
+      "answerable_queries": 24,
+      "top1_accuracy": 0.542,
+      "recall_at_3": 0.917,
+      "coverage": 0.7,
+      "unsupported_answer_rate": 0.19,
+      "abstention_recall_on_ambiguous_and_out_of_scope": 0.333,
+      "median_query_latency_ms": 0.564
+    },
+    {
+      "analyzer": "char",
+      "threshold": 0.22,
+      "queries": 30,
+      "answerable_queries": 24,
+      "top1_accuracy": 0.708,
+      "recall_at_3": 0.875,
+      "coverage": 0.733,
+      "unsupported_answer_rate": 0.136,
+      "abstention_recall_on_ambiguous_and_out_of_scope": 0.5,
+      "median_query_latency_ms": 0.598
+    }
+  ]
+}

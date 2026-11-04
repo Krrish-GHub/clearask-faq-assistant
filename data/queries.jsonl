@@ -1,0 +1,30 @@
+{"id":"q01","question":"When can I go to the library?","category":"paraphrase","expected_faq_id":"library-hours"}
+{"id":"q02","question":"does the libary shut on sunday","category":"typo","expected_faq_id":"library-hours"}
+{"id":"q03","question":"I need to plan an evening study visit; how late is the library open?","category":"indirect","expected_faq_id":"library-hours"}
+{"id":"q04","question":"What do I use to get on campus internet?","category":"paraphrase","expected_faq_id":"wifi-access"}
+{"id":"q05","question":"my wifi passwrod isnt working what now","category":"typo","expected_faq_id":"wifi-access"}
+{"id":"q06","question":"I have a new laptop and need to get online here","category":"indirect","expected_faq_id":"wifi-access"}
+{"id":"q07","question":"Can I use a lab tomorrow afternoon if I book it now?","category":"paraphrase","expected_faq_id":"lab-booking"}
+{"id":"q08","question":"how do i reseve the computer room","category":"typo","expected_faq_id":"lab-booking"}
+{"id":"q09","question":"Our team needs a place to run a coding session; what should I do?","category":"indirect","expected_faq_id":"lab-booking"}
+{"id":"q10","question":"I need an official copy of my grades, where do I start?","category":"paraphrase","expected_faq_id":"transcript-request"}
+{"id":"q11","question":"how long till my transkript is ready","category":"typo","expected_faq_id":"transcript-request"}
+{"id":"q12","question":"An employer asked for my academic record; how can I get one?","category":"indirect","expected_faq_id":"transcript-request"}
+{"id":"q13","question":"Where do I get the campus bus card?","category":"paraphrase","expected_faq_id":"shuttle-pass"}
+{"id":"q14","question":"how many days for a shutle pass","category":"typo","expected_faq_id":"shuttle-pass"}
+{"id":"q15","question":"I will need to commute between campus buildings; how can I use the shuttle?","category":"indirect","expected_faq_id":"shuttle-pass"}
+{"id":"q16","question":"How do I put money on the campus food account?","category":"paraphrase","expected_faq_id":"meal-account"}
+{"id":"q17","question":"my dineing balance is low how refill it","category":"typo","expected_faq_id":"meal-account"}
+{"id":"q18","question":"I want to buy lunch but my account has no money left","category":"indirect","expected_faq_id":"meal-account"}
+{"id":"q19","question":"I left something behind, who can help me look for it?","category":"paraphrase","expected_faq_id":"lost-property"}
+{"id":"q20","question":"where do i report a lost item","category":"typo","expected_faq_id":"lost-property"}
+{"id":"q21","question":"I can't find my water bottle after class; what's the next step?","category":"indirect","expected_faq_id":"lost-property"}
+{"id":"q22","question":"Can I reserve a small room to study with friends?","category":"paraphrase","expected_faq_id":"study-room"}
+{"id":"q23","question":"how do i book a study space in the libary","category":"typo","expected_faq_id":"study-room"}
+{"id":"q24","question":"We need somewhere quiet to prepare together; what options are there?","category":"indirect","expected_faq_id":"study-room"}
+{"id":"q25","question":"Is it open now?","category":"ambiguous","expected_faq_id":null}
+{"id":"q26","question":"Can I get a pass for it?","category":"ambiguous","expected_faq_id":null}
+{"id":"q27","question":"How do I book that?","category":"ambiguous","expected_faq_id":null}
+{"id":"q28","question":"How do I appeal a parking fine?","category":"out_of_scope","expected_faq_id":null}
+{"id":"q29","question":"What is the tuition refund deadline?","category":"out_of_scope","expected_faq_id":null}
+{"id":"q30","question":"Can you tell me tomorrow's weather?","category":"out_of_scope","expected_faq_id":null}
