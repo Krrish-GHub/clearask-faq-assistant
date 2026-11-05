@@ -71,3 +71,7 @@ This is a teaching-scale benchmark written to make an undergrad-level retrieval 
 ## Status
 
 The word and character TF-IDF baselines, a synthetic test set, abstention-threshold sweep, and seven unit tests are in place. The next useful experiment is to expand the synthetic evaluation set and review failure cases before drawing stronger conclusions; the current benchmark is not a finished or validated real-world system.
+
+## Live demo
+
+Try the [interactive GitHub Pages demo](https://krrish-ghub.github.io/clearask-faq-assistant/).
